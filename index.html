@@ -1,81 +1,193 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-	<title>RUBAN</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!--<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css"> -->
-<!--   ##########   RUUD     ############ -->
-<!-- The parent component -->
-<div class="curtain">
-	
-  <!-- The component wrapper -->
-  <div class="curtain__wrapper">
-
-  	<!-- The checkbox hack! -->
-    <input type="checkbox" checked>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Animation inauguration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+    <noscript>
+      <link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+    </noscript>
+    </head>
+    <body>
+        
+        <div class="container demo-1">
     
-    <!-- The left curtain panel -->
-    <div class="curtain__panel curtain__panel--left">
-    	    <h1>Click to reveal&nbsp;</h1>
-    </div> <!-- curtain__panel -->
-    
-    <div class="curtain__content">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/trophy.svg">
-      <h2>Achievement Unlocked!</h2>
-    </div>
-    
-    <div class="curtain__panel curtain__panel--right">
-      <h1>a special reward...</h1>
-    </div> <!-- curtain__panel -->
-    
-  </div> <!-- curtain__wrapper -->
-</div> <!-- curtain -->
+      <!-- Codrops top bar -->
+            <div class="codrops-top clearfix">
+                <a href="#">
+                    <strong>&nbsp; Inauguration : </strong>Lundi 18 décembre 2017
+                </a>
+                <span class="right">
+                    <a href="#">
+                        <strong>Les apprenants de simplon.co</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div><!--/ Codrops top bar -->
 
 
-</head>
-<body>
-	
-</body>
+            <div id="slider" class="sl-slider-wrapper">
 
-<!--   ##########   RUUD     ############ -->
+        <div class="sl-slider">
+        
+          <div class="sl-slide bg-1" data-orientation="vertical" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="3" data-slice2-scale="3">
+            <div class="sl-slide-inner">
+              <!--<div class="deco" data-icon="H"></div>-->
+              <h2>Inauguration<br />Lundi 18 décembre 2017</h2>
+              <blockquote> </blockquote>
+            </div>
+          </div>
+          
+          <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="1.5" data-slice2-scale="1.5">
+            <div class="sl-slide-inner">
+              <!--<div class="deco" data-icon="H"></div>-->
+              <h2><div class="ribbon"><div class="ribbon-stitches-top"></div><strong class="ribbon-content"></strong><div class="ribbon-stitches-bottom"></div></div></h2>
+              
+              <blockquote></blockquote>
+            </div>
+          </div>
+          
+          <div class="sl-slide bg-3" data-orientation="vertical" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <h2><div class="balloon"></div>
+                <div class="balloon"></div>
+                <div class="balloon"></div>
+                <div class="balloon"></div>
+                <div class="balloon"></div>
+                <div class="balloon"></div>
+                <div class="balloon"></div>
+                <div class="balloon"></div>
+                <div class="balloon"></div></h2>
+              <blockquote> </blockquote>
+            </div>
+          </div>
+          
+          <div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <!-- <div class="deco" data-icon="I"></div> -->
+              <h2> </h2>
+              <blockquote>FIN</blockquote>
+            </div>
+          </div>
+          
+<!--          
+          <div class="sl-slide bg-5" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="deco" data-icon="t"></div> 
+              <h2> </h2>
+              <blockquote>fin</blockquote>
+            </div>
+          </div>        
+-->
+        </div>  <!--/sl-slider--> 
 
+<!--        
+        <nav id="nav-arrows" class="nav-arrows">
+          <span class="nav-arrow-prev">Previous</span>
+          <span class="nav-arrow-next">Next</span>
+        </nav>
 
+        <nav id="nav-dots" class="nav-dots">
+          <span class="nav-dot-current"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </nav>
+-->
+      </div><!-- /slider-wrapper -->
 
+        </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slitslider.js"></script>
+    <script type="text/javascript"> 
+      $(function() {
+      
+        var Page = (function() {
 
+          var $navArrows = $( '#nav-arrows' ),
+            $nav = $( '#nav-dots > span' ),
+            slitslider = $( '#slider' ).slitslider( {
+              onBeforeChange : function( slide, pos ) {
 
-<!--   ##########   VANESSA     ############ -->
+                $nav.removeClass( 'nav-dot-current' );
+                $nav.eq( pos ).addClass( 'nav-dot-current' );
 
+              }
+            } ),
 
+            init = function() {
 
+              initEvents();
+              
+            },
+            initEvents = function() {
 
+              // add navigation events
+              $navArrows.children( ':last' ).on( 'click', function() {
 
+                slitslider.next();
+                return false;
 
-<!--   ##########   ILHAM     ############ -->
+              } );
 
+              $navArrows.children( ':first' ).on( 'click', function() {
+                
+                slitslider.previous();
+                return false;
 
+              } );
 
+              $nav.each( function( i ) {
+              
+                $( this ).on( 'click', function( event ) {
+                  
+                  var $dot = $( this );
+                  
+                  if( !slitslider.isActive() ) {
 
-<!--   ##########   ANTOINE     ############ -->
+                    $nav.removeClass( 'nav-dot-current' );
+                    $dot.addClass( 'nav-dot-current' );
+                  
+                  }
+                  
+                  slitslider.jump( i + 1 );
+                  return false;
+                
+                } );
+                
+              } );
 
+            };
 
+            return { init : init };
 
+        })();
 
-<!--   ##########   FLORIAN     ############ -->
+        Page.init();
 
+        /**
+         * Notes: 
+         * 
+         * example how to add items:
+         */
 
+        /*
+        
+        var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+        
+        // call the plugin's add method
+        ss.add($items);
 
-
-
-
-<!--   ##########   FIN CODE     ############ -->
-
-
-
-
-<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
-<script type="text/javascript" src="app.js"></script>
-
-</body>
+        */
+      
+      });
+    </script>
+  </body>
 </html>
