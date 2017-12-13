@@ -275,6 +275,7 @@
 .demo-1 .bg-1 [data-icon]:after,
 .demo-1 .bg-1 h2 {
 	color: #fff;
+	font-family: 'Cutive Mono', monospace;
 }
 
 /* Second Slide */
@@ -422,7 +423,7 @@
   text-align:center;
   width:100%;
   position:absolute;
-  bottom:-12px;
+  bottom:-27px;
   z-index:-100;
 }
 
@@ -464,7 +465,9 @@
 .balloon:nth-child(10):before { color:hsl(16,45%,50%);  }
 
 
-
+.logos{
+	margin-top: 100px;
+}
 
 
 
