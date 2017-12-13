@@ -260,7 +260,7 @@
 /* First Slide */
 .demo-1 .bg-1 .sl-slide-inner,
 .demo-1 .bg-1 .sl-content-slice {
-	background-image: url("img/rideau.png");
+	background-image: url("../images/rideau.png");
 	background-size: cover;  
 /*	background:  #5bc2ce; */
 	color: #eee;
@@ -273,7 +273,7 @@
 /* Second Slide */
 .demo-1 .bg-2 .sl-slide-inner,
 .demo-1 .bg-2 .sl-content-slice {
-	/* background-image: url("img/rodez-noel2001.png");   */
+	/* background-image: url("../images/rodez-noel2001.png");   */
 	 background: #358;  
 }
 
@@ -367,6 +367,21 @@
 	color: #ecd82c;
 }
 
+.demo-2 .bg-img-1 {
+	background-image: url(../images/1.jpg);
+}
+.demo-2 .bg-img-2 {
+	background-image: url(../images/2.jpg);
+}
+.demo-2 .bg-img-3 {
+	background-image: url(../images/3.jpg);
+}
+.demo-2 .bg-img-4 {
+	background-image: url(../images/4.jpg);
+}
+.demo-2 .bg-img-5 {
+	background-image: url(../images/5.jpg);
+}
 
 /* Animations for content elements */
 
@@ -426,7 +441,7 @@
 .balloon:nth-child(5){ background:hsl(23,55%,57%); animation-duration:5s; }
 .balloon:nth-child(5):before { color:hsl(23,44%,46%);  }
 
-.balloon:nth-child(6){ background:hsl(49,55%,57%); animation-duration:8s; }
+.balloon:nth-child(6){ background:hsl(49,55%,57%); animation-duration:5s; }
 .balloon:nth-child(6):before { color:hsl(49,40%,50%);  }
 
 .balloon:nth-child(7){ background:hsl(127,60%,64%); animation-duration:4,5s; }
