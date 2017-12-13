@@ -6,10 +6,79 @@
 body {font-size: 18px
 }
 .curtain {
+  margin: 0 auto;
   width: 100%; /* Ensures the component is the full screen width */
   height: 100vh; /* We're using this for demo purposes */
   overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
 }
+
+  &__wrapper{
+	width: 100%;
+	height: 100%;
+ input[type=checkbox] {
+      position: absolute;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      
+      // When the checkbox is checked...
+      &:checked {
+        
+        // Slide the first panel
+        &~div.curtain__panel--left {
+          transform: translateX(0);
+        }
+        
+        // Slide the second panel
+        &~div.curtain__panel--right {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+  
+  &__panel {
+    display: flex;
+    align-items: center;
+    background: orange;
+    color: #fff;
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    transition: all 1s ease-out;
+    z-index: 2;
+    &--left {
+      justify-content: flex-end;
+      transform: translateX(-100%);
+    }
+    &--right {
+      justify-content: flex-start;
+      transform: translateX(100%);
+    }
+  }
+  
+  &__content {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    
+    img {
+      width: 20%;
+    }
+  }
+
+}
+}
+
   
 .curtain__wrapper {
   width: 100%;
@@ -17,7 +86,7 @@ body {font-size: 18px
 }
       
 .curtain__panel {
-  background: orange;
+  background-image: url("../img/red-curtain.jpg") ;
   width: 50%; /* Each panel takes up half the container */
   height: 100vh; /* Used for demo purposes */
   float: left; /* Makes sure panels are side-by-side */
@@ -41,7 +110,26 @@ body {font-size: 18px
   height: 100%;
 }
 
+input[type=checkbox] {
+  position: absolute; /* Force the checkbox at the start of the container */
+  cursor: pointer; /* Indicate the curtain is clickable */
+  width: 100%; /* The checkbox is as wide as the component */
+  height: 100%; /* The checkbox is as tall as the component */
+  z-index: 100; /* Make sure the checkbox is on top of everything else */
+  opacity: 0; /* Hide the checkbox */
+}
 
+/* When the checkbox is checked... */
+        
+/* Slide the first panel in */
+input[type=checkbox]:checked ~ div.curtain__panel--left {
+  transform: translateX(0);
+}
+        
+/* Slide the second panel in */
+input[type=checkbox]:checked ~ div.curtain__panel--right {
+  transform: translateX(0);
+}
 
 
 
