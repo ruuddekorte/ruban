@@ -1,3 +1,10 @@
+.ribbon-ciseaux {cursor: url("../img/ciseauxouvert.png"), default;}
+.ribbon-ciseaux:hover {cursor: url("../img/ciseauxferme.png"), default;}
+
+.zoomed{
+    cursor: url("../img/ciseauxouvert.png"), default !important;
+}
+
 .demo-1 .sl-slider-wrapper {
 	position: absolute;
 	width: 100%;
@@ -260,7 +267,7 @@
 /* First Slide */
 .demo-1 .bg-1 .sl-slide-inner,
 .demo-1 .bg-1 .sl-content-slice {
-	background-image: url("../images/rideau.png");
+	background-image: url("../img/rideau.png");
 	background-size: cover;  
 /*	background:  #5bc2ce; */
 	color: #eee;
