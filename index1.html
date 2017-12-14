@@ -41,19 +41,21 @@
 				
 					<div class="sl-slide bg-1" data-orientation="vertical" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="3" data-slice2-scale="3">
 						<div class="sl-slide-inner">
+							<img class="corde" src="img/corde.png">
 							<h2>Inauguration<br />Lundi 18 décembre 2017</h2>
 							<blockquote> </blockquote>
 						</div>
 						<nav id="nav-arrows" class="nav-arrows">
-							<span class="nav-arrow-next">Next</span>
+							<span class="nav-arrow-next"></span>
 						</nav>
 					</div>
 					
 					<div class="sl-slide bg-2 ribbon-ciseaux" data-orientation="vertical" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="1.5" data-slice2-scale="1.5">
 						<div class="sl-slide-inner">
 				
-							<h2><div class="ribbon"><div class="ciseaux"><div class="ribbon-stitches-top"></div><strong class="ribbon-content"></strong><div class="ribbon-stitches-bottom"></div></div></div></h2>
+							<h2><div class="ribbon"><div class="ciseaux" onclick="slitslider.next()"><div class="ribbon-stitches-top"></div><strong class="ribbon-content"></strong><div class="ribbon-stitches-bottom"></div></div></div></h2>
 							<blockquote> </blockquote>
+
 						</div>
 					</div>
 					
@@ -113,6 +115,12 @@
 						initEvents = function() {
 
 							// add navigation events
+							// $('.sl-slider' ).on( 'click'(function() {
+							// 	slitslider.next();
+							// 	return false;
+
+							// } );
+				// add navigation events
 							$navArrows.children( ':last' ).on( 'click', function() {
 
 								slitslider.next();

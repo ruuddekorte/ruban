@@ -12,9 +12,10 @@ $(document).ready(function(){
   $(".ribbon-ciseaux").click(function(){
       if($(this).hasClass("zoomed")){
         $(this).removeClass("zoomed");
+                        slitslider.next();
       }else{
           $(this).addClass("zoomed");
-        
+                        slitslider.next();
       }
   });
 });
