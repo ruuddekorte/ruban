@@ -7,7 +7,9 @@ $(document).ready(function(){
       }else{
       $(this).addClass("zoomed");
       }
-    
+//     var e = jQuery.Event("keydown");
+// e.which = 39; // # Key code
+// $("#test").trigger(e);
   });
   $(".ribbon-ciseaux").click(function(){
       if($(this).hasClass("zoomed")){
@@ -16,6 +18,9 @@ $(document).ready(function(){
           $(this).addClass("zoomed");
         
       }
+      var e = jQuery.Event("keydown");
+e.which = 39; // # Key code
+$("#test").trigger(e);
   });
 });
 

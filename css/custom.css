@@ -280,7 +280,7 @@
 /* Second Slide */
 .demo-1 .bg-2 .sl-slide-inner,
 .demo-1 .bg-2 .sl-content-slice {
-	 background: #358;  
+	 background: #dddfe6;  
 }
 
 .demo-1 .bg-2 [data-icon]:after,
@@ -298,7 +298,7 @@
 /* Third Slide */
 .demo-1 .bg-3 .sl-slide-inner,
 .demo-1 .bg-3 .sl-content-slice {
-	background: #358;
+	background: #dddfe6;
 }
 
 .demo-1 .bg-3 .deco {
@@ -434,8 +434,8 @@
   background:rgba(0,0,0,0.2); 
 }
 
-.balloon:nth-child(2){ background:hsl(245,40%,65%); animation-duration:3.5s; }
-.balloon:nth-child(2):before { color:hsl(245,40%,65%);  }
+.balloon:nth-child(2){ background:hsl(#f1404b); animation-duration:3.5s; }
+.balloon:nth-child(2):before { color:hsl(#f1404b);  }
 
 .balloon:nth-child(3){ background:hsl(139,50%,60%); animation-duration:3s; }
 .balloon:nth-child(3):before { color:hsl(139,30%,50%);  }
@@ -474,13 +474,13 @@
    position: absolute;
    text-align: center;
    font-size: 2px!important;
-   background: #d64b4b;
-   background: -webkit-gradient(linear, left top, left bottom, from(#d64b4b), to(#ab2c2c));
-   background: -webkit-linear-gradient(top, #d64b4b, #ab2c2c);
-   background: -moz-linear-gradient(top, #d64b4b, #ab2c2c);
-   background: -ms-linear-gradient(top, #d64b4b, #ab2c2c);
-   background: -o-linear-gradient(top, #d64b4b, #ab2c2c);
-   background-image: -ms-linear-gradient(top, #d64b4b 0%, #ab2c2c 100%);
+   background: #f4f5f9;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f4f5f9), to(#ab2c2c));
+   background: -webkit-linear-gradient(top, #f1404b, #f1404b);
+   background: -moz-linear-gradient(top, #f1404b, #f1404b);
+   background: -ms-linear-gradient(top, #f1404b, #f1404b);
+   background: -o-linear-gradient(top, #f1404b, #f1404b);
+   background-image: -ms-linear-gradient(top, #f1404b 0%, #f1404b 100%);
    -webkit-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
    -moz-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
    box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
