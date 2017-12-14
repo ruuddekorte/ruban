@@ -287,7 +287,6 @@
 	 background: #358;  
  	background-image: url("../img/fondpublic6.jpg");
 	background-size: cover;  
-
 }
 
 .demo-1 .bg-2 [data-icon]:after,
@@ -305,16 +304,13 @@
 /* Third Slide */
 .demo-1 .bg-3 .sl-slide-inner,
 .demo-1 .bg-3 .sl-content-slice {
-	background: #358;
  	background-image: url("../img/fondpublic1.jpg");
-	background-size: cover;  
+	background-size: cover; 
 }
-
 .demo-1 .bg-3 .deco {
 	border-color: #fff;
 	border-color: rgba(255,255,255,0.5);
 }
-
 .demo-1 .bg-3 [data-icon]:after {
 	color: #fff;
 	text-shadow: 0 0 1px #fff;
@@ -330,22 +326,18 @@
 .demo-1 .bg-3 blockquote:before {
 	color: #c46c96;
 }
-
 /* Forth Slide */
 .demo-1 .bg-4 .sl-slide-inner,
 .demo-1 .bg-4 .sl-content-slice {
 		background: #000000;
 }
-
 .demo-1 .bg-4 .deco {
 	border-color: #379eaa;
 }
-
 .demo-1 .bg-4 [data-icon]:after {
 	text-shadow: 0 0 1px #277d87;
 	color: #277d87;
 }
-
 .demo-1 .bg-4 h2,
 .demo-1 .bg-4 blockquote{
 	color: #f40;
@@ -472,7 +464,7 @@
 .balloon:nth-child(7):before { color:hsl(45,100%,50%);  }
 
 .balloon:nth-child(8){ background:hsl(167,83%,50%); animation-duration:6s; }
-.balloon:nth-child(8):before { color:hsl(160,70%,20%);  }
+.balloon:nth-child(8):before { color:hsl(160,70%,45%);  }
 
 .balloon:nth-child(9){ background:hsl(248,55%,57%); animation-duration:4s; }
 .balloon:nth-child(9):before { color:hsl(248,40%,50%);  }

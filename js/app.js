@@ -7,18 +7,18 @@ $(document).ready(function(){
       }else{
       $(this).addClass("zoomed");
       }
-    
   });
   $(".ribbon-ciseaux").click(function(){
       if($(this).hasClass("zoomed")){
         $(this).removeClass("zoomed");
-                        slitslider.next();
       }else{
           $(this).addClass("zoomed");
-                        slitslider.next();
       }
+      var e = jQuery.Event("keydown");
+      e.which = 39; // # Key code
+          $("#test").trigger(e);
   });
 });
 
-
+ 
 
