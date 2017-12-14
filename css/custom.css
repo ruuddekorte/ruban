@@ -1,8 +1,8 @@
-.ribbon-ciseaux {cursor: url("../img/ciseauxouvert.png"), default;}
-.ribbon-ciseaux:hover {cursor: url("../img/ciseauxferme.png"), default;}
+.ribbon-ciseaux {cursor: url("../img/scissor_open.png"), default;}
+.ribbon-ciseaux:hover {cursor: url("../img/scissor_closed.png"), default;}
 
 .zoomed{
-    cursor: url("../img/ciseauxouvert.png"), default !important;
+    cursor: url("../img/scissor_open.png"), default !important;
 }
 
 .demo-1 .sl-slider-wrapper {
