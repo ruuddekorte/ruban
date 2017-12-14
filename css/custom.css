@@ -285,6 +285,9 @@
 .demo-1 .bg-2 .sl-slide-inner,
 .demo-1 .bg-2 .sl-content-slice {
 	 background: #358;  
+ 	background-image: url("../img/fondpublic6.jpg");
+	background-size: cover;  
+
 }
 
 .demo-1 .bg-2 [data-icon]:after,
@@ -303,6 +306,8 @@
 .demo-1 .bg-3 .sl-slide-inner,
 .demo-1 .bg-3 .sl-content-slice {
 	background: #358;
+ 	background-image: url("../img/fondpublic1.jpg");
+	background-size: cover;  
 }
 
 .demo-1 .bg-3 .deco {
@@ -448,26 +453,26 @@
   background:rgba(0,0,0,0.2); 
 }
 
-.balloon:nth-child(2){ background:hsl(245,40%,65%); animation-duration:3.5s; }
-.balloon:nth-child(2):before { color:hsl(245,40%,65%);  }
+.balloon:nth-child(2){ background:hsl(103,75%,50%); animation-duration:3.5s; }
+.balloon:nth-child(2):before { color:hsl(103,60%,40%);  }
 
 .balloon:nth-child(3){ background:hsl(139,50%,60%); animation-duration:3s; }
 .balloon:nth-child(3):before { color:hsl(139,30%,50%);  }
 
-.balloon:nth-child(4){ background:hsl(59,50%,58%); animation-duration:4.5s; }
-.balloon:nth-child(4):before { color:hsl(59,30%,52%);  }
+.balloon:nth-child(4){ background:hsl(360,100%,58%); animation-duration:4.5s; }
+.balloon:nth-child(4):before { color:hsl(360,80%,52%);  }
 
 .balloon:nth-child(5){ background:hsl(23,55%,57%); animation-duration:5s; }
 .balloon:nth-child(5):before { color:hsl(23,44%,46%);  }
 
-.balloon:nth-child(6){ background:hsl(49,55%,57%); animation-duration:5s; }
-.balloon:nth-child(6):before { color:hsl(49,40%,50%);  }
+.balloon:nth-child(6){ background:hsl(360,65%,57%); animation-duration:5s; }
+.balloon:nth-child(6):before { color:hsl(360,70%,50%);  }
 
-.balloon:nth-child(7){ background:hsl(127,60%,64%); animation-duration:4,5s; }
-.balloon:nth-child(7):before { color:hsl(127,40%,70%);  }
+.balloon:nth-child(7){ background:hsl(52,100%,50%); animation-duration:4,5s; }
+.balloon:nth-child(7):before { color:hsl(45,100%,50%);  }
 
-.balloon:nth-child(8){ background:hsl(360,55%,57%); animation-duration:6s; }
-.balloon:nth-child(8):before { color:hsl(360,40%,50%);  }
+.balloon:nth-child(8){ background:hsl(167,83%,50%); animation-duration:6s; }
+.balloon:nth-child(8):before { color:hsl(160,70%,20%);  }
 
 .balloon:nth-child(9){ background:hsl(248,55%,57%); animation-duration:4s; }
 .balloon:nth-child(9):before { color:hsl(248,40%,50%);  }
@@ -488,13 +493,13 @@
    position: absolute;
    text-align: center;
    font-size: 2px!important;
-   background: #d64b4b;
-   background: -webkit-gradient(linear, left top, left bottom, from(#d64b4b), to(#ab2c2c));
-   background: -webkit-linear-gradient(top, #d64b4b, #ab2c2c);
-   background: -moz-linear-gradient(top, #d64b4b, #ab2c2c);
-   background: -ms-linear-gradient(top, #d64b4b, #ab2c2c);
-   background: -o-linear-gradient(top, #d64b4b, #ab2c2c);
-   background-image: -ms-linear-gradient(top, #d64b4b 0%, #ab2c2c 100%);
+   background: #D40004;
+   background: -webkit-gradient(linear, left top, left bottom, from(#D40004), to(#ab2c2c));
+   background: -webkit-linear-gradient(top, #D40004, #FF0004);
+   background: -moz-linear-gradient(top, #D40004, #FF0004);
+   background: -ms-linear-gradient(top, #D40004, #FF0004);
+   background: -o-linear-gradient(top, #D40004, #FF0004);
+   background-image: -ms-linear-gradient(top, #D40004 0%, #FF0004 100%);
    -webkit-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
    -moz-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
    box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
